@@ -696,7 +696,7 @@ as you see above the first section is the file permissions, followed by the link
   This is the same as:  
  `chmod 754 filename`
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FilePermission.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FilePermission2.png?raw=true" width="650"/>
 </p>
 ## Application of Linux
 Content for this section.
