@@ -55,6 +55,11 @@ Prepared by: **Mohammed Farahat**
         - [R - Histograms](#r---histograms)
         - [R - Line Graphs](#r---line-graphs)
         - [R - Scatterplots](#r---scatterplots)
+        - [R - ggplot](#r---ggplot)
+    - [R Basic Statistics](#r-basic-statistics) 
+        - [R - Mean, Median and Mode](#r---mean-median-and-mode)
+        - [R - Normal Distribution](#r---normal-distribution)
+        - [R - Binomial Distribution](#r---binomial-distribution)
 # Day1: Introduction to Unix/Linux OS
 ## Introduction to Linux/Unix OS and command line
 ### What is Linux?
