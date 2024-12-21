@@ -57,7 +57,7 @@ Ubuntu, Fedora/Red Hat, Mandriva, etc.
 - Best multi-user and multi tasking OS.
 - The world’s fastest super computers run Linux.
 - Fast developing OS (many developers)
-## Linux Distributions
+### Linux Distributions
 Different Linux distributions are available. You can explore them here: [DistroWatch](http://distrowatch.com/).
 
 - **Ubuntu**: A distribution that is easy and convenient to use for beginners.
@@ -66,6 +66,15 @@ Different Linux distributions are available. You can explore them here: [DistroW
 <p align="center">
 <img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/4a4c390b4c7222fd7a78966b371c3ef8ca202187/imgaes/Unix.png?raw=true" width="650"/>
 </p>
+
+### The Terminal
+- A terminal refers to a wrapper program which runs a shell.
+- There are many different Unix shells, the most popular shell for interactive use includes Bash: the default on most Linux installations.
+
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/Terminal.png?raw=true" width="650"/>
+</p>
+
 ## Manipulating files, useful commands and tips
 Content for this section.
 
