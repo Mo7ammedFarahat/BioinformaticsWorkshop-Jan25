@@ -960,5 +960,5 @@ ssh remoteusername@remotehost
 - Example: Uploading all the `.txt` files from your current working directory to a remote host:
   ```bash
   scp ./*.txt username@myhost.com:/home/username/folder
-``
+```
 
