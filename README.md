@@ -2,6 +2,7 @@
 
 ## Medical Ain Shams Research Institute, Egypt, Jan 2025.
 
+
 Prepared by: **Mohammed Farahat**
 
 ## Table of Contents
@@ -573,10 +574,130 @@ cut -d' ' -f2,3 <filename>
 ---
 
 ## Outputs redirection and combining different commands
+### Commands Outputs
+
+- By default, the standard output of any command will appear on the terminal screen.
+- Redirection of the output result to a file is possible.
+- This is particularly useful for big files.
+- Syntax: `command options filename.in > filename.out`
+### Output redirection
+- If the file exists, the result will be redirected to it.  
+- If the file does not exist, it will be automatically created and the result redirected to it  
+```bash
+$ cat ghandi.txt
+The difference between what we do
+and what we are capable of doing
+would suffice to solve
+most of the world's problems
+```
+```bash
+$ cut -d’ ‘ -f2,3 ghandi.txt
+difference between
+what we
+suffice to
+of the
+```
+```bash
+$ cut -d’ ‘ -f2,3 ghandi.txt > ghandi.txt.out
+```
+```bash
+$ cat ghandi.txt.out
+difference between
+what we
+suffice to
+of the
+```
+### Commands Combination
+
+- The standard output of any command will be one unique output.
+- As seen previously, this output can be printed on the screen or redirected to a file.
+- However, the output result of a command can also be redirected to another command.
+- This is particularly useful when several operations are needed for a file, with no need to store the intermediate outputs.
+
+### Commands Combination: Example
+
+- Combining several commands is done thanks to the use of a “|” character.
+- **Structure:**
+
+```bash
+command1 options1 filename1.in | command2 options2 > filename.out
+```
+
+- This can be done for as many commands as needed.
 
 ## Permissions, groups and control
-Content for this section.
+### Files and directories permissions
+On a Linux system, each file and directory is assigned access rights for the owner of the file, the members of a group of related users, and everybody else.
 
+```bash
+mohammedfarahat@slurm-login:~$ ls -l
+drwxr-xr--  2 mohammedfarahat cbio-group           8 Mar 17  2024 MolDock
+drwxr-xr-x  4 mohammedfarahat cbio-group           2 Dec 18  2023 Projects
+drwxr-xr-x  3 mohammedfarahat cbio-group           2 Jan 26  2024 PurB
+drwxr-xr-x  3 mohammedfarahat cbio-group           1 Jul 17  2023 R
+drwxr-xr-x  6 mohammedfarahat cbio-group          15 Mar  5  2024 RNASeq_V0
+drwxrwxr-x  8 mohammedfarahat cbio-group           7 Jan 23  2024 RefGraph
+```
+as you see above the first section is the file permissions, followed by the link count of the directory or file (including itself), then the owner, the group, size in bytes, modification time and the file name.  
+#### Permissions are broken into 4 sections:
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FilePermission.png?raw=true" width="650"/>
+</p>
+
+### Access Permissions on Files
+
+- **r**: Indicates **read** permission. It allows the user to read or copy the file's contents.
+- **w**: Indicates **write** permission. It allows the user to modify or change the file.
+- **x**: Indicates **execute** permission. It allows the user to run the file as a program or script, where appropriate.
+
+### Access Permissions on Directories
+
+- **r**: Indicates permission to **list** files in the directory.
+- **w**: Indicates permission to **delete** files from the directory or **move** files into it.
+- **x**: Indicates permission to **access** files in the directory. This means you may read files in the directory, provided you have read permission on the individual files.
+
+### `chmod` command
+
+- The `chmod` command is used to **change the permissions** of a file or a directory.
+- **Syntax**: `chmod options permissions filename`
+- Only the **owner** of the file can use `chmod` to change the permissions.
+- Permissions define access for:
+  - **Owner** (user who owns the file)
+  - **Group** (users who are members of the file's group)
+  - **Others** (everyone else)
+
+#### Two Ways to Specify Permissions:
+- **Symbols**: Alphanumeric characters
+- **Octals**: Digits (0 to 7)
+
+### `chmod` Options
+
+| Symbol | Meaning                           |
+|--------|-----------------------------------|
+| u      | user                              |
+| g      | group                             |
+| o      | other                             |
+| a      | all                               |
+| r      | read                              |
+| w      | write (and delete)                |
+| x      | execute (and access directory)    |
+| +      | add permission                    |
+| -      | take away permission              |
+
+### Octal Permissions
+
+- 4 stands for "read"
+- 2 stands for "write"
+- 1 stands for "execute"
+- 0 stands for "no permission"
+### chmod Examples
+
+ `chmod u=rwx,g=rx,o=r filename`  
+  This is the same as:  
+ `chmod 754 filename`
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FilePermission.png?raw=true" width="350"/>
+</p>
 ## Application of Linux
 Content for this section.
 
@@ -593,5 +714,4 @@ Content for this section.
 Content for this section.
 
 # end of page
-    
-    
+
