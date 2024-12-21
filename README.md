@@ -18,7 +18,7 @@ Prepared by: **Mohammed Farahat**
   - [Controlling tasks](#controlling-tasks)
   - [SSH into remote machine](#ssh-into-remote-machine)
 
-* [Day2: Introduction to R programming language](#Day2.md)
+* [Day2: Introduction to R programming language](Day2.md)
     - [R & R Studio Installing](#r--r-studio-installing)
     - [Basic Syntax](#basic-syntax)
     - [R Reserved Words](#r-reserved-words)
