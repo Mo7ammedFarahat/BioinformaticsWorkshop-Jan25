@@ -81,6 +81,8 @@ Even though it is a command line interface, the mouse is still handy (scroll, co
 <img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys.png?raw=true" width="650"/>
 </p>
 
+---
+
 <p align="center">
 <img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys2.png?raw=true" width="650"/>
 </p>
@@ -126,10 +128,11 @@ Every directory has two special subdirectories:
 
 ---
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys6.png?raw=true" width="350"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys6.png?raw=true" width="650"/>
 </p>
 
 ---
+## Creating directories and navigating
 
 ### Commands for Manipulating Directories
 
@@ -141,7 +144,83 @@ Every directory has two special subdirectories:
 | `cd`    | Change directory: allows moving from one directory to another |
 | `ls`    | Lists a directory's content                          |
 
+### pwd Command
 
+- `pwd`: Print Working Directory.
+- Displays the absolute path of your current location in the file system.
+- Try `pwd` on your terminal.
+- Example output: `/home/YourUsername`
+
+### ls Command
+
+- `ls` lists the content of the current directory by default.
+- Command structure: `ls [OPTION] [dirname]`.
+
+##### Useful Options:
+- `-l`: Shows sizes, modified date and time, file or folder name, owner of file, and permissions.
+- `-a`: Lists all files, including hidden files starting with `.`.
+- `-lh`: Shows sizes in an easily readable format.
+- `-R`: Recursively lists sub-directories.
+- `-lS`: Sorts by file sizes.
+
+### Creating a Directory
+
+- `mkdir`: Makes a directory.
+- Command structure: `mkdir dirname [path]`.
+- `mkdir dirname`: Creates a directory with the specified `dirname` in your current working directory.
+- To create a directory elsewhere, specify the path: `mkdir dirname path`.
+
+### Commands Basic Structure
+
+The general structure of commands in Unix/Linux is:
+
+#### Examples:
+- `ls –lh /home/Watson/NU`: Lists the contents of `/home/Watson/NU` in a human-readable format.
+- `pwd`: Prints the absolute path of the current working directory.
+- `mkdir Test1`: Creates a directory named `Test1` in the current working directory.
+
+### What You Should Know About File Names in Linux
+
+- There is no real distinction between the names of ordinary files and the names of directory files.
+- No two files in the same directory can have the same name.
+- Files in different directories can have the same name.
+- Linux is case-sensitive: `Sanger`, `sanger`, and `SANGER` are different and represent three distinct files.
+- In most cases, file extensions (e.g., `.txt`, `.exe`) are optional.
+
+### Move in the File System
+
+- `cd`: Changes the working directory.
+- Command structure: `cd <path>`.
+- Specify the path name of the directory you want to move to.
+- The path can be specified as either:
+  - **Absolute path**: The full path from the root directory.
+  - **Relative path**: The path relative to your current working directory.
+
+
+### Remove a Directory
+
+- `rmdir`: Removes a directory.
+- Command structure: `rmdir dirname [path]`.
+- It removes the `dirname` directory.
+- The directory should be in your current working directory.
+- To remove it from elsewhere, specify the path: `rmdir dirname path_to_directory`.
+- `rmdir` only works if the directory is empty.
+- If the directory contains files or subdirectories, an error message will appear: `Directory not empty`.
+- To remove a directory and its contents, use `rm -r` (recursive), which will recursively remove the directory and all its contents.
+
+### How to Get Help for a Command from the Terminal
+
+ `man commandname`: In Linux, this command is used to display the user manual for any command that can be run in the terminal.  
+
+## Useful shortcuts
+- `cd`: When used with no arguments, `cd` changes the working directory to your home directory.  
+- `cd ~user_name`: Moves to the specified user's home directory.
+- `Ctrl+A`: Move the cursor to the beginning of the command line.
+- `Ctrl+C`: End a running program and return to the prompt.
+- `Ctrl+D`: Logout from the current shell session; equivalent to `exit`.
+- `Tab`: Autocomplete a file name.
+- `Tab` + `Tab`: Displays command completion possibilities.
+- `Ctrl+L`: Clear the terminal.
 ## Manipulating files, useful commands and tips
 Content for this section.
 
