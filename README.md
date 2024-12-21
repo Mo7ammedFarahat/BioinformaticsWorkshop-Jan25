@@ -97,6 +97,20 @@ Even though it is a command line interface, the mouse is still handy (scroll, co
 - An **absolute path** in the file system hierarchy for a given file or folder describes the parents all the way up to the root.
 - A **relative path** describes the path to the file starting from the **current working directory**.
 
+### ~ (Your Home Directory)
+
+- `~` refers to the home directory in a given file system.
+- The tilde `~` character can be used to specify paths starting at your home directory.
+
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys3.png?raw=true" width="650"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys4.png?raw=true" width="650"/>
+</p>
+
+
 ## Manipulating files, useful commands and tips
 Content for this section.
 
