@@ -80,6 +80,23 @@ Even though it is a command line interface, the mouse is still handy (scroll, co
 <p align="center">
 <img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys.png?raw=true" width="650"/>
 </p>
+
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys2.png?raw=true" width="650"/>
+</p>
+
+### Home Directory and Working Directory
+- When you first log in on a UNIX system, the working directory is your home directory.
+- While working, you will be associated with one directory called the working directory or the current directory.
+- An abbreviation of the working directory is displayed as part of the prompt on your terminal.
+- The command `pwd` gives the absolute path of the working directory.
+
+### What is a Path or a Pathname?
+
+- A path locates a given file in the system hierarchy.
+- An **absolute path** in the file system hierarchy for a given file or folder describes the parents all the way up to the root.
+- A **relative path** describes the path to the file starting from the **current working directory**.
+
 ## Manipulating files, useful commands and tips
 Content for this section.
 
