@@ -2,8 +2,6 @@
 
 ## Medical Ain Shams Research Institute, Egypt, Jan 2025.
 
-Note: Material used to prepare for the workshop was extracted from [HPRC Tutorial](https://github.com/human-pangenomics/hprc-tutorials/tree/GA-workshop)
-
 Prepared by: **Mohammed Farahat**
 
 ## Table of Contents
