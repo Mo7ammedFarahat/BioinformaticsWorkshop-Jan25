@@ -64,7 +64,7 @@ Different Linux distributions are available. You can explore them here: [DistroW
 - A simple guide to install Ubuntu on your machine can be found here: [Install Ubuntu Desktop](http://www.ubuntu.com/download/desktop/install-ubuntudesktop).
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/4a4c390b4c7222fd7a78966b371c3ef8ca202187/imgaes/Unix.png?raw=true" width="350"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/4a4c390b4c7222fd7a78966b371c3ef8ca202187/imgaes/Unix.png?raw=true" width="450"/>
 </p>
 ## Manipulating files, useful commands and tips
 Content for this section.
