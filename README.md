@@ -74,7 +74,12 @@ Different Linux distributions are available. You can explore them here: [DistroW
 <p align="center">
 <img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/Terminal.png?raw=true" width="650"/>
 </p>
+Even though it is a command line interface, the mouse is still handy (scroll, copy, paste, etc.)
 
+###  File-System Under Linux
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys.png?raw=true" width="650"/>
+</p>
 ## Manipulating files, useful commands and tips
 Content for this section.
 
