@@ -696,22 +696,246 @@ as you see above the first section is the file permissions, followed by the link
   This is the same as:  
  `chmod 754 filename`
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FilePermission2.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FilePermission2.png?raw=true" width="350"/>
 </p>
-## Application of Linux
-Content for this section.
+
+#### More Examples
+
+- `777` : `(rwxrwxrwx)` No restrictions on permissions. Anybody may do anything
+- `755` : `(rwxrxrx)` The file's owner may read, write, and execute the file. All others may read and execute the file (common for programs that are used by all users)
+- `700` : `(rwx)` The file's owner has all the rights. Nobody else has any rights (private for the owner)
+- `666` : `(rwrwrw)` All users may read and write the file.
+- `644` : `(rwrr)` The owner may read and write a file, while all others may only read the file (everybody may read, but only the owner may change)
+- `600` : `(rw)` The owner may read and write a file. All others have no rights
 
 ## Environment variable
-Content for this section.
+### Variables
+
+- Variables are areas of memory that can be used to store information and are referred to by a name.
+- **How to create a variable**: a line that contains the name of the variable followed immediately by an equal sign (`=`).
+- 2 types of variables:
+  - **Shell variables**
+  - **Environment variables**
+- Some variables are already set in your shell session.
+- `printenv`: prints the values of all your environment variables.
+
+### What is an Environment Variable
+
+- An environment variable is a dynamic "object" on a computer that stores a value, which in turn can be referenced by one or more programs.
+- Environment variables help programs know what directory to install files in, where to store temporary files, where to find user profile settings, and other things.
+- Environment variables help to create and shape the environment where a program runs.
+### Examples of Environment Variables
+
+- **HOME**: The environmental variable that shows the current user's home directory.
+- **PATH**: The environmental variable, which contains a colon-separated list of the directories that the system searches to find the executable program corresponding to a command issued by the user.
+- **PWD**: Always stores the value of your current working directory.
 
 ## Shell Scripting
-Content for this section.
+### echo Command
+
+- **Syntax**: `echo options arguments`
+- Writes arguments to the standard output.
+- `echo`: Just prints its command-line parameters to standard output.
+- If you redirect the result, your arguments will be written into the file you are redirecting to.
+- Commonly used by shell scripts to display results or ask the user to enter parameters.
+### Let’s Echo Some Stuff
+
+- `echo Bioinformatics is great starting writing scripts`
+- If you want to jump to another line, add `\n` and use the option `-e`:
+  - `echo -e "Bioinformatics is great \n starting writing scripts"`
+- Setting a variable: `X=firstvariable`
+- `echo X`: prints `X`
+- `echo $X`: prints `firstvariable` (the value of the variable)
+- `echo '$X'`: ➔ `$X`
+- `echo "$X"`: ➔ `firstvariable`
+
+### Print the Result of a Command
+
+- Asking the shell to substitute the results of a given command:
+  - `` command `` or `$(command)`
+- Example:
+  - `echo \`pwd\`` or `echo $(pwd)`
+
+### What is a Shell Script
+
+- Short programs written in shell programming language useful to automate tasks under Linux OS.
+- A shell script is a file containing a series of commands.
+- Shell scripts could be helpful to perform the same actions on many different files.
+- Shell script = scripting interpreter + command line interface to the system.
+- `echo` is also commonly used in shell scripts to display a message or instructions, such as "Please enter Y or N" in an interactive session with users.
+
+### Let’s Start Using the Power of Scripting
+
+1. Create a new script file using `nano`:
+```bash
+   nano myfirstscript
+```
+2. Write the content of your script, for example:
+```bash
+clear
+echo "Hey, I am starting writing shell scripts"
+echo "Let the fun begin!!!"
+```
+3. Run your script using `./`:
+```bash
+./myfirstscript
+```
+4. Change the rights to make sure you have the right to execute:
+```bash
+chmod u+x myfirstscript
+```
+or
+```bash
+chmod 744 myfirstscript
+```
+### The Shebang
+
+A shebang (`#!/bin/bash`) indicates the beginning of a script and specifies the program interpreter to use for running the script.
+
+- The shebang is followed by the absolute path to the executable program.
+- For a Perl script, the shebang could be `#!/usr/bin/perl`.
+- You can use the `which` command to locate the executable file associated with a given command:
+  ```bash
+  which perl  # ➔ /usr/bin/perl
+  which bash  # ➔ /bin/bash
+  ```
+### Use Variables in Your Scripts
+
+- Variables make your script easier to maintain.
+- They help reduce the amount of typing and make your script more flexible.
+
+### If Statements in Shell Scripting
+
+Syntax:
+
+```bash
+if [ conditional_expression ]
+then
+  commands
+else
+  commands
+fi
+```
+Example:
+```bash
+#!/bin/bash
+echo "Let’s try some conditional tests"
+x=`find *.fasta | wc -l`
+echo "The current working directory contains $x fasta files"
+if [ $x -gt $y ]  # or if (($x > $y))
+then
+  echo "There are many existing fasta files in this directory"
+else
+  echo "There are very few fasta files in this directory. Here is the listing: `ls *.fasta`"
+fi
+```
+
+### Loops in Shell Scripting (for)
+
+#### Syntax:
+```bash
+for variable in values
+do
+  commands
+done
+```
+```bash
+#!/bin/bash
+for x in file1 file2
+do
+  head -n 3 $x
+  echo "Operation completed on file: $x"
+done
+```
+
+### Loops in Shell Scripting (while)
+
+#### Syntax:
+```bash
+while [ condition ]
+do
+  command1
+  command2
+done
+```
+```bash
+#!/bin/bash
+n=1
+while [ $n -le 5 ] # n should have an initial value
+do
+  echo "Welcome $n times"
+  n=$(( n + 1 )) # increment 
+  $n
+done
+```
+
+### Operators Supported by Shell
+
+| Operator | Description                                                                                 | Example                                    |
+|----------|---------------------------------------------------------------------------------------------|--------------------------------------------|
+| `+`      | Addition - Adds values on either side of the operator.                                      | `expr $a + $b` will give 30.               |
+| `-`      | Subtraction - Subtracts the right-hand operand from the left-hand operand.                  | `expr $a - $b` will give -10.              |
+| `*`      | Multiplication - Multiplies values on either side of the operator.                          | `expr $a \* $b` will give 200.             |
+| `/`      | Division - Divides the left-hand operand by the right-hand operand.                         | `expr $b / $a` will give 2.                |
+| `=`      | Assignment - Assigns the right operand's value to the left operand.                         | `a=$b` would assign the value of `b` to `a`. |
+| `==`     | Equality - Compares two numbers. If both are the same, returns true.                        | `[ $a == $b ]` would return false.         |
+| `!=`     | Not Equality - Compares two numbers. If both are different, returns true.                   | `[ $a != $b ]` would return true.          |
+| `-eq`    | Checks if the value of two operands are equal. If yes, the condition becomes true.          | `[ $a -eq $b ]` is not true.               |
+| `-ne`    | Checks if the value of two operands are not equal. If not equal, the condition becomes true.| `[ $a -ne $b ]` is true.                   |
+| `-gt`    | Checks if the value of the left operand is greater than the value of the right operand. If yes, the condition becomes true. | `[ $a -gt $b ]` is not true.  |
+| `-lt`    | Checks if the value of the left operand is less than the value of the right operand. If yes, the condition becomes true.    | `[ $a -lt $b ]` is true.       |
+| `-ge`    | Checks if the value of the left operand is greater than or equal to the value of the right operand. If yes, the condition becomes true. | `[ $a -ge $b ]` is not true. |
+| `-le`    | Checks if the value of the left operand is less than or equal to the value of the right operand. If yes, the condition becomes true.    | `[ $a -le $b ]` is true.       |
 
 ## Controlling tasks
-Content for this section.
+### Commands to Control Processes
+
+- **ps**: List the processes running on the system.
+- **kill**: Send a signal to one or more processes (usually to "kill" a process).
+- **jobs**: An alternate way of listing your own processes.
+- **bg**: Put a process in the background.
+
+### Launching a Background Job
+
+- Programs that take time or open a new Graphical User Interface may prevent the prompt from reappearing after the program is launched.  
+  ➔ The shell waits for the program to finish before control returns to you.
+
+#### Options to Interrupt or Background a Program
+
+- **Ctrl+Z**: Interrupts a program.  
+- **Run in the background**: Use the command name followed by `&` to put the program in the background so the prompt returns immediately.
 
 ## SSH into remote machine
-Content for this section.
+#### What is SSH
 
-# end of page
+**SSH (Secure Shell)** is a protocol used to securely log onto remote systems, such as remote Linux machines and Unix-like servers.
+
+### SSH Command
+
+The `ssh` command is the tool used in Linux to connect via the SSH protocol.
+
+### Syntax
+
+```bash
+ssh remoteusername@remotehost
+```
+- Remote host could be an IP address or domain name
+- You will be asked to provide your password
+- To exit and go back to your into your local session, use `exit`.
+
+### Multi-users in a Linux Machine
+
+- While your computer only has one keyboard and monitor, it can still be used by more than one user.
+- For example, if your computer is attached to a network or the Internet, remote users can log in via **SSH** (Secure Shell) and operate the computer.
+- Remote users can execute applications and have the output displayed on a remote computer.
+
+### Copy Files from or to a Remote Machine
+
+- **scp**: Secure Copy
+- **Syntax**: `scp pathfrom pathto`
+- The difference: In **scp**, at least the source or the destination is on a remote machine.
+- Example: Uploading all the `.txt` files from your current working directory to a remote host:
+  ```bash
+  scp ./*.txt username@myhost.com:/home/username/folder
+``
 
