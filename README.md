@@ -106,9 +106,40 @@ Even though it is a command line interface, the mouse is still handy (scroll, co
 <img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys3.png?raw=true" width="650"/>
 </p>
 
+---
+
 <p align="center">
 <img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys4.png?raw=true" width="650"/>
 </p>
+
+## Refer to the Parent and Current Directories
+
+Every directory has two special subdirectories:
+
+ `.` (dot): Refers to the current directory.  
+ `..` (dot-dot): Refers to the parent directory.
+
+
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys5.png?raw=true" width="350"/>
+</p>
+
+---
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys6.png?raw=true" width="350"/>
+</p>
+
+---
+
+### Commands for Manipulating Directories
+
+| Command | Description                                           |
+|---------|-------------------------------------------------------|
+| `mkdir` | Make directory: creates a new directory              |
+| `rmdir` | Removes a directory                                  |
+| `pwd`   | Displays the absolute path of the current working directory |
+| `cd`    | Change directory: allows moving from one directory to another |
+| `ls`    | Lists a directory's content                          |
 
 
 ## Manipulating files, useful commands and tips
