@@ -36,7 +36,7 @@ Different Linux distributions are available. You can explore them here: [DistroW
 - A simple guide to install Ubuntu on your machine can be found here: [Install Ubuntu Desktop](http://www.ubuntu.com/download/desktop/install-ubuntudesktop).
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Unix.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/unix.png?raw=true" width="350"/>
 </p>
 
 ### The Terminal
