@@ -44,19 +44,19 @@ Different Linux distributions are available. You can explore them here: [DistroW
 - There are many different Unix shells, the most popular shell for interactive use includes Bash: the default on most Linux installations.
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/Terminal.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Terminal.png?raw=true" width="650"/>
 </p>
 Even though it is a command line interface, the mouse is still handy (scroll, copy, paste, etc.)
 
 ###  File-System Under Linux
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/FileSys.png?raw=true" width="650"/>
 </p>
 
 ---
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys2.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/FileSys2.png?raw=true" width="650"/>
 </p>
 
 ### Home Directory and Working Directory
@@ -77,13 +77,13 @@ Even though it is a command line interface, the mouse is still handy (scroll, co
 - The tilde `~` character can be used to specify paths starting at your home directory.
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys3.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/FileSys3.png?raw=true" width="650"/>
 </p>
 
 ---
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys4.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/FileSys4.png?raw=true" width="650"/>
 </p>
 
 ## Refer to the Parent and Current Directories
@@ -95,12 +95,12 @@ Every directory has two special subdirectories:
 
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys5.png?raw=true" width="350"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/FileSys5.png?raw=true" width="350"/>
 </p>
 
 ---
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FileSys6.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/FileSys6.png?raw=true" width="650"/>
 </p>
 
 ---
@@ -224,7 +224,7 @@ For more details, check this: [touch Command in Linux](https://phoenixnap.com/kb
 - `vim`, `emacs`, `gedit`, `Geany`: Excellent programs, but they require some learning.
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/Nano.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Nano.png?raw=true" width="650"/>
 </p>
 
 ### Get Started with nano
@@ -614,7 +614,7 @@ drwxrwxr-x  8 mohammedfarahat cbio-group           7 Jan 23  2024 RefGraph
 as you see above the first section is the file permissions, followed by the link count of the directory or file (including itself), then the owner, the group, size in bytes, modification time and the file name.  
 #### Permissions are broken into 4 sections:
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FilePermission.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/FilePermission.png?raw=true" width="650"/>
 </p>
 
 ### Access Permissions on Files
@@ -669,7 +669,7 @@ as you see above the first section is the file permissions, followed by the link
   This is the same as:  
  `chmod 754 filename`
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/imgaes/FilePermission2.png?raw=true" width="350"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/FilePermission2.png?raw=true" width="350"/>
 </p>
 
 #### More Examples
