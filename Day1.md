@@ -39,6 +39,10 @@ Different Linux distributions are available. You can explore them here: [DistroW
 <img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/unix.png?raw=true" width="350"/>
 </p>
 
+<p align="center">
+<img src="https://github.com/human-pangenomics/hprc-tutorials/blob/GA-workshop/assembly/genomics_aotearoa/images/sequencing/meryl_venn.png?raw=true" width="350"/>
+</p>
+
 ### The Terminal
 - A terminal refers to a wrapper program which runs a shell.
 - There are many different Unix shells, the most popular shell for interactive use includes Bash: the default on most Linux installations.
