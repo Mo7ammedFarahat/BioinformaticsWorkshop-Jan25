@@ -35,6 +35,7 @@
         - [R - Histograms](#r-histograms)
         - [R - Line Graphs](#r-line-graphs)
         - [R - Scatterplots](#r-scatterplots)
+        - [R - Heatmaps](#r-heatmaps)
         - [R - ggplot](#r-ggplot)
     - [R Basic Statistics](#r-basic-statistics) 
         - [R - Mean, Median and Mode](#r-mean-median-and-mode)
@@ -413,7 +414,7 @@ print(data)
 
 ## R Data Visualization
 
-### Pie Charts
+### R Pie Charts
 
 Pie charts are used to show the proportions of a whole.
 
@@ -423,7 +424,7 @@ labels <- c("A", "B", "C")
 pie(slices, labels)
 ```
 
-### Bar Charts
+### R Bar Charts
 
 Bar charts represent categorical data with rectangular bars.
 
@@ -431,7 +432,7 @@ Bar charts represent categorical data with rectangular bars.
 barplot(c(10, 20, 30))
 ```
 
-### Boxplots
+### R Boxplots
 
 Boxplots visualize the distribution of a dataset, highlighting the median and outliers.
 
@@ -439,7 +440,7 @@ Boxplots visualize the distribution of a dataset, highlighting the median and ou
 boxplot(mpg ~ cyl, data=mtcars)
 ```
 
-### Histograms
+### R Histograms
 
 Histograms represent the distribution of numerical data by dividing it into intervals.
 
@@ -447,7 +448,7 @@ Histograms represent the distribution of numerical data by dividing it into inte
 hist(mtcars$mpg)
 ```
 
-### Line Graphs
+### R Line Graphs
 
 Line graphs are used to represent data points in a time sequence, or any other continuous data. They are particularly useful for visualizing trends over time or ordered categories.
 
@@ -458,7 +459,7 @@ y <- c(2, 4, 6, 8, 10)
 plot(x, y, type = "o", col = "blue", xlab = "X-axis", ylab = "Y-axis", main = "Simple Line Graph")
 ```
 
-### Scatterplots
+### R Scatterplots
 
 A scatterplot is a diagram that represents the relationship between two variables by plotting data points. It helps to identify patterns, trends, or correlations between variables.
 
@@ -468,7 +469,7 @@ x <- c(1, 2, 3, 4, 5)
 y <- c(2, 4, 6, 8, 10)
 plot(x, y, col = "red", pch = 19, xlab = "X-axis", ylab = "Y-axis", main = "Simple Scatterplot")
 ```
-### Heatmaps
+### R Heatmaps
 #### Plotting a Heatmap of Gene Expression Data
 In this example, we use simulated gene expression data to create a heatmap visualization.  
 ```R
@@ -486,7 +487,7 @@ library(pheatmap)
 pheatmap(gene_expr_matrix, main="Gene Expression Heatmap")
 ```
 
-### ggplot
+### R ggplot
 
 `ggplot2` is a powerful R package used for creating complex plots with simple code. It follows a grammar of graphics, allowing users to layer components of a plot.
 
