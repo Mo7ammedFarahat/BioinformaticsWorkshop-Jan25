@@ -30,7 +30,7 @@
         - [R - Excel File](#r-excel-file)
     - [R Data Visualization](#r-data-visualization) 
         - [R - Pie Charts](#r-pie-charts)
-        - [R - Bar Charts](#r---bar-charts)
+        - [R - Bar Charts](#r-bar-charts)
         - [R - Boxplots](#r-boxplots)
         - [R - Histograms](#r-histograms)
         - [R - Line Graphs](#r-line-graphs)
