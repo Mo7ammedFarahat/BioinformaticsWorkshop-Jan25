@@ -25,7 +25,7 @@
     - [R Code Blocks](#r-code-blocks) 
         - [R - Functions](#r---functions)
         - [R - Packages](#r---packages)
-    - [R File manipulation](#r-file-manipulation) 
+    - [R File Manipulation](#r-file-manipulation) 
         - [R - CSV Files](#r---csv-files)
         - [R - Excel File](#r---excel-file)
     - [R Data Visualization](#r-data-visualization) 
@@ -219,7 +219,7 @@ print(df)
 
 ## R Code Blocks
 
-### Functions
+### R Functions
 
 Functions in R are used to group a set of instructions that can be called repeatedly. R provides many built-in functions, and you can also define your own custom functions.  
 1. Built-in Functions in R
@@ -349,7 +349,7 @@ Output:
 
 
 
-### Packages
+### R Packages
 
 Packages in R extend the functionality of the base language.
 
