@@ -287,6 +287,7 @@ Example 3: Sequence Motif Search in a DNA Sequence
 sequence <- DNAString("ATCGATCGATCGATCG")
 motif <- "ATCG"
 ```
+#### Hint: search for vmatchPattern()
 <details>
   <summary>Answer</summary>
 
@@ -463,6 +464,7 @@ cat("Most Frequent Gene Expression (Mode):", mode_value, "\n")
 ```
 #### Output:
 `Most Frequent Gene Expression (Mode): 14`
+</details>
 
 
 ### Normal Distribution
