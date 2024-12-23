@@ -280,12 +280,12 @@ sequence <- DNAString("ATCGATCGATCGATCG")
 motif <- "ATCG"
 ```
 <details>
-  <summary>Output</summary>
+  <summary>Answer</summary>
 
- # Search for the motif in the sequence
+#### Search for the motif in the sequence
  `motif_positions <- vmatchPattern(motif, sequence)`
 
-# Print the positions of the motif
+#### Print the positions of the motif
 `motif_positions`
 Output:
 `[1] 1 5 9 13`
