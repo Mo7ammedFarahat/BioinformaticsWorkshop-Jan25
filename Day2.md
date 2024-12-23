@@ -247,7 +247,15 @@ print(nucleotide_counts)
 ```
 Explanation:
     `table(dna_sequence)` counts the number of occurrences of each nucleotide (A, T, G, C) in the sequence. This is useful in bioinformatics to determine the composition of a DNA sequence.  
-    
+<details>
+  <summary>Output</summary>
+
+```R
+dna_sequence
+A B C G
+5 4 3 3
+```
+</details>
 Example 2: Calculating GC Content of a DNA Sequence
 
 The GC content is important in bioinformatics to understand the stability of a DNA strand. We can calculate the percentage of G and C bases in a DNA sequence.
@@ -426,6 +434,36 @@ getmode <- function(v) {
 mode_value <- getmode(data)
 print(mode_value)  # Output: 2
 ```
+`set.seed()` is used to set the starting point for generating random numbers. This ensures that the sequence of random numbers generated is reproducible. For example, if you use the same seed number, you will get the same random values every time you run the code. This is useful for reproducibility in experiments or simulations.
+
+#### Finding Most Frequent Gene Expression (Mode Calculation)
+
+In gene expression analysis, the mode can be useful to find the most frequently expressed value across different conditions or samples. Let’s calculate the mode using randomly generated data.
+
+```R
+# Set a seed to ensure reproducibility of random values
+set.seed(789)
+
+# Simulate random gene expression data (random values)
+gene_expression <- sample(10:20, 100, replace = TRUE)
+```
+<details>
+  <summary>Code</summary>
+
+```R
+# Function to calculate mode
+calculate_mode <- function(x) {
+  uniq_x <- unique(x)
+  uniq_x[which.max(tabulate(match(x, uniq_x)))]
+}
+
+# Calculate and print the mode
+mode_value <- calculate_mode(gene_expression)
+cat("Most Frequent Gene Expression (Mode):", mode_value, "\n")
+```
+#### Output:
+`Most Frequent Gene Expression (Mode): 14`
+
 
 ### Normal Distribution
 
