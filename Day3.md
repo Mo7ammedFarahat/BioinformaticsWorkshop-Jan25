@@ -75,10 +75,8 @@ The Human Genome Project (HGP) utilized two main sequencing approaches: **Hierar
 ### Key Differences:
 - **Hierarchical Genome Shotgun Sequencing** relied on a predefined physical map of the genome, while **Whole-Genome Shotgun Sequencing** took a more random approach by fragmenting the genome without the need for a physical map.
 
-![Hierarchical Genome Shotgun Sequencing](https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/WGSSequencing.png)
-
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/unix.png?raw=true" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/WGSSequencing.png" width="650"/>
 </p>
 ### Part 2: DNA Sequencing in the NGS Era
 
