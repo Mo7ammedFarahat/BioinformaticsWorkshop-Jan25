@@ -1,4 +1,4 @@
-* [Day3: Genomics Sequencing technologies and NGS Overview](Day3.md)
+* [Day3: Genomics Sequencing technologies and NGS Overview](Day3.md)  
   - [Part 1: Introduction to DNA Sequencing](#part-1-introduction-to-dna-sequencing)
   - [Part 2: DNA Sequencing in the NGS Era](#part-2-dna-sequencing-in-the-ngs-era)
   - [Part 3: Overview of NGS Technologies](#part-3-overview-of-ngs-technologies)
