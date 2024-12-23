@@ -286,7 +286,7 @@ motif <- "ATCG"
  `motif_positions <- vmatchPattern(motif, sequence)`
 
 #### Print the positions of the motif
-`motif_positions`
+`motif_positions`  
 Output:
 `[1] 1 5 9 13`
 
