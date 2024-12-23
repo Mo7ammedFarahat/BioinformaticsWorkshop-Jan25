@@ -229,6 +229,70 @@ add <- function(a, b) {
 }
 print(add(5, 10))
 ```
+Example 1: Working with DNA Sequences (Vectors)
+
+In bioinformatics, sequences (like DNA or protein sequences) are often represented as character vectors. Here’s how we can use basic R functions to analyze DNA sequences.  
+
+Example 1: Counting Nucleotides in a DNA Sequence
+
+Let’s say we have a DNA sequence stored as a vector of characters:
+
+```R
+# DNA sequence as a vector of nucleotides
+dna_sequence <- c("A", "T", "G", "C", "A", "A", "T", "G", "C", "G", "T", "A", "A")
+
+# Counting the occurrences of each nucleotide
+nucleotide_counts <- table(dna_sequence)
+print(nucleotide_counts)
+```
+Explanation:
+    `table(dna_sequence)` counts the number of occurrences of each nucleotide (A, T, G, C) in the sequence. This is useful in bioinformatics to determine the composition of a DNA sequence.  
+    
+Example 2: Calculating GC Content of a DNA Sequence
+
+The GC content is important in bioinformatics to understand the stability of a DNA strand. We can calculate the percentage of G and C bases in a DNA sequence.
+```R
+# Function to calculate GC content
+calculate_gc_content <- function(dna_seq) {
+  gc_count <- sum(dna_seq == "G" | dna_seq == "C")
+  gc_content <- (gc_count / length(dna_seq)) * 100
+  return(gc_content)
+}
+
+# DNA sequence
+dna_seq <- c("A", "T", "G", "C", "A", "A", "T", "G", "C", "G", "T", "A", "A")
+
+# Calculate GC content
+gc_content <- calculate_gc_content(dna_seq)
+print(paste("GC Content: ", gc_content, "%"))
+```
+<details>
+  <summary>Output</summary>
+
+  GC Content:  38.46 %
+
+</details>
+
+Example 3: Sequence Motif Search in a DNA Sequence
+```R
+# Define a DNA sequence and motif
+sequence <- DNAString("ATCGATCGATCGATCG")
+motif <- "ATCG"
+```
+<details>
+  <summary>Output</summary>
+
+ # Search for the motif in the sequence
+ `motif_positions <- vmatchPattern(motif, sequence)`
+
+# Print the positions of the motif
+`motif_positions`
+Output:
+`[1] 1 5 9 13`
+
+</details>
+
+
 
 ### Packages
 
