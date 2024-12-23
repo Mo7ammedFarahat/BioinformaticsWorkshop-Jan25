@@ -197,25 +197,81 @@ A genome represented by a single contiguous sequence with **no ambiguities**.
   - Faster and cheaper compared to traditional **Sanger sequencing**.
   - Represents a **revolution** in genomics and molecular biology.
 
-## NGS: Sequencing Technologies and Platforms
 
-| **Category**               | **Technology**          | **Company Support**        | **Chemistry**               |
-|----------------------------|-------------------------|----------------------------|-----------------------------|
-| **Massively Parallel Sequencing** | Solexa                  | Illumina                   | Bridge PCR on flowcell      |
-|                            | 454                     | Roche Applied Science      | emPCR on beads             |
-|                            | SOLiD                   | AB / Life Technologies     | emPCR on beads             |
-|                            | Ion Torrent             | Life Technologies          | emPCR on beads             |
-|                            |                         |                            | Seq-By-Synthesis           |
-|                            |                         |                            | Pyrosequencing             |
-|                            |                         |                            | Seq-By-Ligation            |
-|                            |                         |                            | Proton detection           |
-| **Single Molecule Sequencing** | PacBio SMRT            | Pacific Biosciences        | Pol performance, Real-time-Seq |
-|                            | Nanopore                | Oxford Nanopore Tech/McNally | Translocation             |
-|                            |                         |                            | NA                          |
 
 ### Part 3: Overview of NGS Technologies
 
-Content for Part 3...
+## NGS: Sequencing Technologies and Platforms
+
+### Massively Parallel Sequencing
+
+| **Technology** | **Company**            | **Support**            | **Chemistry**        |
+|-----------------|------------------------|------------------------|----------------------|
+| Solexa          | Illumina              | Bridge PCR on flowcell | Seq-By-Synthesis     |
+| 454             | Roche Applied Science | emPCR on beads         | Pyrosequencing       |
+| SOLiD           | AB / Life Technologies | emPCR on beads         | Seq-By-Ligation      |
+| Ion Torrent     | Life Technologies     | emPCR on beads         | Proton detection     |
+
+### Single Molecule Sequencing
+
+| **Technology** | **Company**              | **Support**            | **Chemistry**        |
+|-----------------|--------------------------|------------------------|----------------------|
+| PacBio SMRT     | Pacific Biosciences     | Pol performance        | Real-time-Seq        |
+| Nanopore        | Oxford Nanopore Tech / McNally | Translocation      | NA                  |
+
+## Solexa Sequencing Workflow
+
+### 1. Sample Preparation
+- **Cleaving**: Input DNA is cleaved into short fragments.
+- **Adaptor Ligation**: Fragments are ligated to adaptors and then annealed to a slide using the adaptors.
+- **Denaturation**: DNA fragments are denatured into single strands for sequencing.
+
+### 2. Sequencing Process
+- **Modified Nucleotides**: Modified nucleotides are used, with each emitting a distinct colored light when excited by a laser.
+- **Terminators**: Each nucleotide has a terminator, ensuring that only one base is added at a time.
+
+### 3. Amplification
+- **Bridge PCR**: The DNA fragments are amplified on the slide using bridge PCR in repeated cycles.
+
+### 4. Imaging
+- **Fluorescence Detection**: After each base addition, fluorescence signals are captured to determine the sequence of each DNA fragment.
+
+### 5. Data Analysis
+- **Image Processing**: The fluorescence signals are analyzed to reconstruct the DNA sequence.
+
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Solexa.png" width="650"/>
+</p>
+
+
+[Solexa / Illumina Sequencing Technology Comparison](https://emea.illumina.com/systems/sequencing-platforms/comparison-tool_msm_moved_msm_moved.html)
+
+---
+You can also read about the other technologies such as:
+- 454 Technology
+- SOLiD
+- Ion Torrent
+- PacBio
+- Nanopore
+
+### Four Main Advantages of NGS Over Classical Sanger Sequencing
+
+#### 1. **Speed**
+NGS is quicker than Sanger sequencing in two ways:
+- The chemical reaction can be combined with the signal detection, whereas in Sanger sequencing, these are two separate processes.
+- In Sanger sequencing, only 1 read can be taken at a time, whereas NGS is massively parallel.
+
+#### 2. **Cost**
+- The human genome sequence cost $300M with Sanger sequencing.
+- Sequencing a human genome with Illumina allows approaching the $1,000 expected cost.
+
+#### 3. **Sample Size**
+NGS requires significantly less starting DNA/RNA compared to Sanger sequencing.
+
+#### 4. **Accuracy**
+- NGS covers more repeats than Sanger sequencing, resulting in greater coverage, higher accuracy, and sequence reliability. However, individual reads are less accurate for NGS.
+
+
 
 ### Part 4: DNA-Seq Protocol: Overview
 
