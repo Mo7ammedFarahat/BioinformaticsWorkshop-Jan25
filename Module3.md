@@ -78,7 +78,7 @@ The Human Genome Project (HGP) utilized two main sequencing approaches: **Hierar
 - **Hierarchical Genome Shotgun Sequencing** relied on a predefined physical map of the genome, while **Whole-Genome Shotgun Sequencing** took a more random approach by fragmenting the genome without the need for a physical map.
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/WGSSequencing.png" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/WGSSequencing.png" width="650"/>
 </p>
 
 ### Sequencing Quality
@@ -242,7 +242,7 @@ A genome represented by a single contiguous sequence with **no ambiguities**.
 - **Image Processing**: The fluorescence signals are analyzed to reconstruct the DNA sequence.
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Solexa.png" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/Solexa.png" width="650"/>
 </p>
 
 
