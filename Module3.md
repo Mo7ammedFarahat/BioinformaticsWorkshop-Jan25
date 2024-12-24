@@ -173,7 +173,8 @@ A genome represented by a single contiguous sequence with **no ambiguities**.
     - **6,000 individuals** with documented diseases (focused on protein-coding regions).  
 - **Outcomes**:
   - Establishing links between **genetic variants** and **rare diseases**.
-#### Part 2: DNA Sequencing in the NGS Era
+
+## Part 2: DNA Sequencing in the NGS Era
 
 ### DNA Sequencing (DNA-Seq)
 
@@ -201,7 +202,7 @@ A genome represented by a single contiguous sequence with **no ambiguities**.
 
 
 
-#### Part 3: Overview of NGS Technologies
+## Part 3: Overview of NGS Technologies
 
 ### NGS: Sequencing Technologies and Platforms
 
@@ -275,10 +276,228 @@ NGS requires significantly less starting DNA/RNA compared to Sanger sequencing.
 
 
 
-#### Part 4: DNA-Seq Protocol: Overview
+## Part 4: DNA-Seq Protocol: Overview
 
-Content for Part 4...
+### Protocol for Library Construction  
 
-#### Part 5: DNA-Seq Analysis Pipeline and File Formats
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/DNALibrary.png" width="650"/>
+</p>
 
-Content for Part 5...
+### 1. Genomic DNA Purification  
+
+   **Starting Material:**  
+   - QC:
+     - Quality Control:
+       - Gel visualization.
+       - Bioanalyzer (Agilent, Bio-Rad).
+     - Quantity Control:
+       - Nanodrop, Qubit.
+     - Experimental Design:
+       - SR (single read) or PE (paired-end).
+       - Multiplexing or not.
+       - De novo or not.
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SE_vs_PE.png" width="650"/>
+</p>
+
+### 2. Genomic DNA Fragmentation  
+
+   **Fragmentation Methods:**  
+   - Can be included in the kit.
+   - Optimization of fragmentation parameters.
+
+   **Several Methods:**
+   - Enzymatic.
+   - Nebulization.
+   - Acoustic shearing.
+
+   **Starting Material:**
+   - Input:
+     - Low Quality DNA: Caution in size selection.
+     - High Quality DNA: Size selection.
+
+### 3. End Repair and A-Tailing  
+
+   **Repair Ends:**  
+   - Converts overhangs:
+     - A-Tailing (Adenylation).
+     - Adds an 'A' base to the 3' end of the blunt phosphorylated DNA fragments.
+     - Prevents formation of adapter dimers and concatamers.
+
+   **Reagents:**
+   - 1 mM dATP, Klenow exo (3' to 5' exo minus).
+   - Blunt ends + Phosphorylates 5'-end.
+
+   **Enzymatic Reaction:**
+   - Reagents: dNTP, T4 DNA pol, Klenow – Kinase/ATP (T4 PNK).
+   - Simple enzymatic reaction.
+
+### 4. Adapter Ligation  
+
+   **A-Tailing (Adenylation):**  
+   - Adds an ‘A’ base to the 3' end of the blunt phosphorylated DNA fragments.
+   - Prevents formation of adapter dimers and concatamers.
+
+   **Reagents:**
+   - 1 mM dATP, Klenow exo (3' to 5' exo minus).
+
+### 5. Size Selection & PCR  
+
+   **Size Selection:**  
+   - Read length considerations:
+     - Size select 300–400 bp or 350–500 bp, post-ligation.
+     - Ensures maximum coverage of most inserts.
+     - Problem of non-uniform genome coverage and material loss.
+     - Strategy to focus read lengths during sample and library preparation.
+
+   **Methods for Size Selection:**
+   - Double solid-phase reverse immobilization (SPRI).
+   - SPRI + Reverse-SPRI methods allow reshaping the input fragment distribution into well-defined ranges.
+
+### 6. Sequencing  
+
+   **Input:**  
+   - Library Constructed:
+     - Whole-genome.
+     - Whole-exome.
+     - Target region.
+
+   **Cluster Amplification + Sequencing + Base Calling:**  
+   - Amplification of library fragments to form clusters on the flow cell.
+   - Sequencing of clusters by the chosen platform.
+   - Base calling to determine the sequence of each fragment.
+
+   **Quality Control (Run Report):**  
+   - Evaluation of sequencing quality through run reports.
+   - QC parameters include read depth, error rates, and signal-to-noise ratio.
+
+   **Output:**  
+   - Sequenced Reads: Final output in FASTQ format.
+   - These reads can be used for downstream analyses like alignment, variant calling, and annotation.
+
+
+## Part 5: DNA-Seq Analysis Pipeline and File Formats
+
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/DNA_Pipeline.png" width="650"/>
+</p>
+
+### 01. Raw Sequencing Reads  
+
+   **Sequencing Output:**  
+   - FASTQ (text) format.
+   - Potentially SRA (binary), but typically used for public data online.
+
+   **Fastq File:**
+   - Improvement of the Sanger breakthrough by associating each nucleotide to a quality score.
+   - Contains hundreds of millions of lines/rows.
+   - Blocks of 4 lines (@).
+   
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/Fastq.png" width="350"/>
+</p>
+
+#### Sequencing RUN/QC
+
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/Fastqc.png" width="350"/>
+</p>
+
+### FastQC: Quality Control for NGS Data
+
+**FastQC** is a tool used to assess the quality of raw sequencing data. It provides detailed information on several aspects of the data to help identify potential issues before proceeding with downstream analyses.
+
+#### Key Features:
+- **Per base sequence quality:** Shows the quality of nucleotides across all bases in the sequence.
+- **Per sequence quality scores:** Evaluates the overall quality score of each sequence.
+- **Per base GC content:** Displays the distribution of GC content for each base position.
+- **Per base N content:** Identifies the proportion of unknown bases (Ns) at each position.
+- **Sequence duplication levels:** Analyzes the degree of redundancy in the sequences.
+- **Overrepresented sequences:** Detects any sequences that are unusually abundant.
+- **Kmer content:** Assesses if any particular kmers (short sequences) are overrepresented.
+
+#### How to Use FastQC:
+1. **Installation:**
+   - Download and install FastQC from its official website or package manager.
+     - Official website: [FastQC Downloads](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+     - Alternatively, install via `conda`:
+       ```
+       conda install -c bioconda fastqc
+       ```
+
+2. **Running FastQC:**
+   - To run FastQC on your raw sequencing data:
+     ```
+     fastqc your_data.fastq
+     ```
+
+   - FastQC will generate a report for each input file, which can be viewed in a web browser.
+
+3. **Interpreting the Results:**
+   - FastQC outputs a detailed HTML report showing different types of quality checks for the raw sequences.
+   - Green: Pass (No issues detected)
+   - Orange: Warning (Minor issues detected)
+   - Red: Fail (Serious issues detected)
+
+#### Benefits of Using FastQC:
+- **Quick Quality Assessment:** Provides an overview of data quality in a matter of minutes.
+- **Identify Common Issues Early:** Helps detect common problems such as low-quality sequences, GC bias, or contamination.
+- **Guides Preprocessing Decisions:** Useful in deciding if trimming, filtering, or other preprocessing steps are necessary before further analysis.
+
+### Step 02: Reads Mapping/Alignment (SAM/BAM)
+
+In this step, we align sequencing reads to a reference genome. This process is essential for downstream analyses such as variant calling and gene expression analysis. Various tools and formats are used to carry out mapping and manage the resulting data.
+
+#### Input Files:
+- **FASTQ (.fastq):** Raw sequencing reads.
+- **Reference Genome (.fasta, .fa, .fai):** The reference genome used for alignment.
+- **Annotation Files (GFF/GTF, GFF3):** Optional, but useful for annotating the aligned reads and identifying gene features.
+  - **GFF3 File Format:**
+    - 1 line per feature.
+    - Tab-separated columns.
+    - 9 required columns plus optional additional information.
+    - Example:
+      ```
+      SEQ-ID  SOURCE  TYPE  START-END  SCORE  STRAND  PHASE  ATTRIBUTES
+      ```
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/GTF.png" width="350"/>
+</p>
+
+#### Alignment Tools:
+- **BWA (Burrows-Wheeler Aligner):** A fast and efficient algorithm for mapping low-divergent sequences against a reference genome.
+  - Command example:
+    ```
+    bwa mem reference.fasta reads.fastq > aligned.sam
+    ```
+- **Bowtie:** A fast and memory-efficient aligner for short DNA sequences.
+- **STAR (Spliced Transcripts Alignment to a Reference):** A highly efficient and fast RNA-seq aligner, ideal for handling spliced reads in RNA sequencing.
+  - Command example:
+    ```
+    STAR --genomeDir /path/to/genome_index --readFilesIn reads.fastq --outFileNamePrefix aligned_
+    ```
+- **de novo Assemblers (e.g., Newbler):** For situations where a reference genome is not available, such as with 454 sequencing.
+
+#### Output Files:
+- **SAM (.sam):** Sequence Alignment/Map format for storing sequence alignment information in text format.
+- **BAM (.bam):** Binary version of SAM, used for efficient storage and faster processing.
+
+#### GTF/GFF3 Format:
+The GTF (Gene Transfer Format) and GFF (General Feature Format) are used to annotate genome sequences and provide information about gene features. Below is a representation of the GTF file structure:
+
+| **Column**   | **Description**                                |
+|--------------|------------------------------------------------|
+| SEQ-ID       | Name of the reference sequence (e.g., chromosome) |
+| SOURCE       | Source of the annotation (e.g., Ensembl)      |
+| TYPE         | Type of feature (e.g., gene, exon)            |
+| START-END    | Start and end positions of the feature        |
+| SCORE        | A score for the feature (optional)            |
+| STRAND       | The strand of the reference sequence (+ or -) |
+| PHASE        | Phase for CDS features (optional)             |
+| ATTRIBUTES   | Additional feature attributes (e.g., gene_id) |
+
+Example GTF entry:
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SAM.png" width="350"/>
+</p>
