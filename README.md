@@ -5,7 +5,7 @@
 
 Prepared by: **Mohammed Farahat**
 
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/raw/main/images/background.jpg" alt="Background Image" style="width:100%; height:30%;">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/raw/main/images/Background.jpg" alt="Background Image" style="width:100%; height:30%;">
 
 
 ## Table of Contents
