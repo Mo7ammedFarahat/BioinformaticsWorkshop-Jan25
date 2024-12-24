@@ -70,3 +70,8 @@ Prepared by: **Mohammed Farahat**
   - [Part 4: DNA-Seq Protocol: Overview](#part-4-dna-seq-protocol-overview)
   - [Part 5: DNA-Seq Analysis Pipeline and File Formats](#part-5-dna-seq-analysis-pipeline-and-file-formats)
 
+
+
+#### Acknowledgment of Sources
+
+This document contains content that has been adapted and modified from open-access materials, as well as original contributions by the author.
