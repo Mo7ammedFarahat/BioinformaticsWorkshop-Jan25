@@ -637,28 +637,28 @@ Each type addresses different scales of genetic variation:
 - **Variant Calling** focuses on detecting small mutations at the nucleotide level.
 
 
-# VCF (Variant Call Format)
+### VCF (Variant Call Format)
 
 The **VCF (Variant Call Format)** is a text file format used for storing **SNPs (Single Nucleotide Polymorphisms)** and **InDels (Insertions and Deletions)** information. It is widely used in genomic research for representing genetic variants across individuals.
 
-## Key Features:
+#### Key Features:
 
 - **Text-based Format**: The VCF format is a plain text file that contains genetic variant data.
 - **Stores SNPs and InDels**: VCF files are used to store both SNPs (single nucleotide changes) and InDels (small insertions or deletions).
 - **Standardized Format**: The VCF format is standardized and used across multiple bioinformatics tools and platforms.
 - **Multi-step Procedure for Variant Calling**: Obtaining variants in this format requires multiple steps involving different tools for calling variants from raw sequencing data.
 
-### References:
+#### References:
 - [1000 Genomes Project](http://www.1000genomes.org/node/101)
 
-## Structure of VCF:
+#### Structure of VCF:
 
 VCF files consist of two main parts:
 
-### 1. **Headers (Meta-information)**
+#### 1. **Headers (Meta-information)**
    The header section contains metadata about the file, such as the reference genome used, the file format version, and the tool used for variant calling.
 
-### 2. **Data Lines**
+#### 2. **Data Lines**
    The data lines contain the actual variant information for each position in the genome, which includes:
    - Chromosome position
    - ID (variant identifier)
@@ -668,7 +668,7 @@ VCF files consist of two main parts:
    - Filter status
    - Information about the sample(s) and genotype(s)
 
-## Required Fields:
+#### Required Fields:
 VCF files have 8 required fields, which are tab-delimited:
 
 1. **CHROM**: Chromosome name (e.g., 1, 2, X, etc.)
@@ -680,7 +680,7 @@ VCF files have 8 required fields, which are tab-delimited:
 7. **FILTER**: Filter status (e.g., PASS or fail)
 8. **INFO**: Additional information about the variant
 
-## Example of a VCF File:
+#### Example of a VCF File:
 
 | CHROM | POS   | ID     | REF | ALT | QUAL | FILTER | INFO                     |
 |-------|-------|--------|-----|-----|------|--------|--------------------------|
@@ -691,29 +691,29 @@ In this example:
 - The first line is the header.
 - The following lines represent variants with their respective fields.
 
-## STEP 05: BIOLOGICAL INTERPRETATION
+### STEP 05: BIOLOGICAL INTERPRETATION
 
-### File Formats:
+#### File Formats:
 - CSV, XLS, TXT
 
 From Variant Annotation to Data Mining
 
-### Web-Based Tools:
+#### Web-Based Tools:
 - Various available packages for annotation and interpretation.
 
-### Aim:
+#### Aim:
 - **Functional impact** of variants (synonymous or non-synonymous).
 - **Gene Ontology Annotation** (BP: Biological Process, MF: Molecular Function, CC: Cellular Component).
 - **Pathway/Network** information.
 - **Predictions** of pathogenicity/severity.
 
-### Useful Tool:
+#### Useful Tool:
 - **DAVID** (Database for Annotation, Visualization, and Integrated Discovery) for switching between databases.
   - [DAVID Website](https://david.ncifcrf.gov/)
 
-## Conclusion
+### Conclusion
 
-### Biological Question
+## Biological Question
 - The biological question needs to be clearly defined first so that the design of the experiment, the library construction, and the pipeline of analysis can be prepared accordingly.
 
 ### Platforms
