@@ -713,21 +713,21 @@ From Variant Annotation to Data Mining
 
 ### Conclusion
 
-## Biological Question
+#### Biological Question
 - The biological question needs to be clearly defined first so that the design of the experiment, the library construction, and the pipeline of analysis can be prepared accordingly.
 
-### Platforms
+#### Platforms
 - Each platform has its own specificities that need to be understood before choosing one.
 - Different technologies include:
   - Short reads (e.g., Illumina)
   - Long reads (e.g., PacBio)
 
-### Considerations:
+#### Considerations:
 - These technologies are rapidly evolving, but several limitations exist, such as:
   - PCR bias for GC-rich regions.
 - Combining different platforms is possible (e.g., de novo sequencing).
 
-### Input/Output Files
+#### Input/Output Files
 - Companion indexed files are needed:
   - `.fa` & `.fai`, `.bam` & `.bai`, `.vcf` & `.vcf.idx`
 - Text-based formats:
@@ -735,7 +735,7 @@ From Variant Annotation to Data Mining
 - Binary formats:
   - BAM, BCF
 
-### Coordinate Systems:
+#### Coordinate Systems:
 - Some formats use 1-based indexing (e.g., GFF/GFT, SAM/BAM).
 - Others use 0-based indexing (e.g., BED).
 
