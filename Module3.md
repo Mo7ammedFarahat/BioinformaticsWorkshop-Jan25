@@ -501,3 +501,137 @@ Example GTF entry:
 <p align="center">
 <img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SAM.jpg" width="650"/>
 </p>
+
+### Step 03: Genomic Coverage
+
+**Coverage** in genomic analysis refers to how much of the genome has been sequenced or how deeply specific regions have been analyzed. There are different ways to measure and visualize coverage. Below are the relevant concepts and tools:
+
+### Tools and Formats
+
+- **IGV (Integrative Genomics Viewer)**  
+  IGV is a popular tool for visualizing genomic data. You can use it to inspect how well a sequencing run covers a reference genome, particularly useful for visualizing **coverage depth**.  
+  More information on IGV can be found on the [Broad Institute's website](https://www.broadinstitute.org/igv/).
+
+- **BED (Browser Extensible Data)**  
+  The **BED** format is a text-based file format used to store data related to genome positions, typically used for defining regions of interest in genomic studies.  
+  You can learn more about BED files from the [UCSC Genome Browser FAQs](http://genome.ucsc.edu/FAQ/FAQformat).
+
+### Coverage Associated with Three Concepts:
+
+1. **Fold Coverage (number of X)**  
+   This term indicates how many times each nucleotide in the genome has been sequenced. For example, 30x coverage means each base has been sequenced 30 times. High fold coverage can reduce the impact of sequencing errors.
+
+2. **Breadth of Coverage**  
+   Refers to the proportion of the genome that is covered by sequencing reads. A higher breadth of coverage means a larger portion of the genome is analyzed, which is important for genome-wide studies.
+
+3. **Depth of Coverage**  
+   Depth is the average number of reads covering a particular position in the genome. High depth ensures accurate base calling, especially in regions with high variability.
+
+### Step 04: SV/CNV/Variant Calling
+
+**SV/CNV/Variant Calling** refers to the identification of different types of genomic variations. These variations can affect large regions or single nucleotides in the genome. Below are the key concepts and types of variations:
+
+### Structural Variations (SV)
+
+Structural variations (SV) include large-scale alterations in the genome and can involve:
+- **Deletions**
+- **Duplications**
+- **Copy-number variations (CNV)**
+- **Insertions**
+- **Inversions**
+- **Translocations**
+
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SNV_SV.png" width="650"/>
+</p>
+
+### Copy-Number Variations (CNV)
+
+Copy-number variations (CNVs) involve deletions or duplications of genes or relatively large regions of the genome that affect chromosomes. These variations can lead to significant genomic changes and may have important biological implications.
+
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/CNV.png" width="650"/>
+</p>
+
+### Variant Calling (SNPs and Small InDels)
+
+- **SNPs (Single Nucleotide Polymorphisms)**: SNPs affect only a single nucleotide in the genome.
+- **InDels (Insertions and Deletions)**: InDels affect one or several nucleotides in a sequence.
+
+
+## Explanation of SV, CNV, and Variant Calling
+
+The difference between **SV**, **CNV**, and **Variant Calling** pertains to different types of genetic variations in the genome. Below is a detailed explanation of each type with examples:
+
+### 1. **Structural Variations (SV)**
+
+Structural Variations (SV) refer to large-scale changes in the structure of the genome. These changes affect large segments of the genome (often in the range of hundreds to thousands of base pairs).
+
+#### Main Types of Structural Variations:
+- **Deletions**: Removal of a segment of the genome. For example, if 500 base pairs are deleted from the genome, it represents a structural deletion.
+  - Example: **22q11.2 deletion syndrome**, where a large section of chromosome 22 is deleted, causing various congenital conditions.
+
+- **Duplications**: When a segment of the genome is repeated more than once.
+  - Example: **CYP2D6 duplication**, which leads to excessive production of the enzyme and can affect drug metabolism.
+
+- **Inversions**: When a segment of the genome is reversed.
+  - Example: An inversion in a region of a chromosome may lead to disrupted gene expression, potentially contributing to diseases.
+
+- **Translocations**: The exchange of segments between different chromosomes.
+  - Example: **Philadelphia chromosome translocation** (between chromosomes 9 and 22), which is associated with chronic myelogenous leukemia (CML).
+
+#### Summary:
+Structural variations involve large-scale changes to the genome, affecting entire segments of chromosomes and potentially leading to genetic disorders.
+
+---
+
+### 2. **Copy Number Variations (CNV)**
+
+Copy Number Variations (CNV) refer to changes in the number of copies of a specific region of the genome, either through deletions or duplications of large genomic regions.
+
+#### Main Types of CNV:
+- **Deletions**: A segment of the chromosome or gene is deleted, leading to a loss of genetic material.
+  - Example: **Down syndrome**, where there is an extra copy of chromosome 21 (a duplication), leading to developmental and cognitive issues.
+
+- **Duplications**: An increase in the number of copies of a gene or a genomic region.
+  - Example: **Fragile X syndrome**, which occurs due to a duplication of certain regions on the X chromosome, leading to intellectual disabilities.
+
+#### Summary:
+CNVs involve the duplication or deletion of large portions of the genome, which can affect gene function and lead to genetic disorders.
+
+---
+
+### 3. **Variant Calling**
+
+Variant Calling is the process of identifying genetic mutations at the single-nucleotide level. This involves detecting changes in the DNA sequence of an individual.
+
+#### Main Types of Variants:
+- **SNPs (Single Nucleotide Polymorphisms)**: A change in a single nucleotide base in the genome. These changes can be inherited or occur randomly.
+  - Example: **CFTR gene mutation** causing **Cystic Fibrosis**.
+
+- **InDels (Insertions and Deletions)**: Refers to the insertion or deletion of one or more nucleotides in the DNA sequence.
+  - Example: **BRCA1 gene mutation** where a small insertion or deletion leads to an increased risk of breast cancer.
+
+#### Summary:
+Variant Calling refers to detecting small mutations (like SNPs and InDels) in the DNA sequence. These mutations can affect gene function and may lead to diseases.
+
+---
+
+### Key Differences Between SV, CNV, and Variant Calling:
+
+- **SV (Structural Variations)**: Large-scale changes in the genome structure such as deletions, duplications, inversions, or translocations, which can impact large segments of chromosomes.
+- **CNV (Copy Number Variations)**: Changes in the number of copies of a specific genomic region, affecting either deletions or duplications of genomic sections.
+- **Variant Calling**: Detection of small-scale mutations in the DNA sequence, such as SNPs and InDels, typically at the single nucleotide level.
+
+#### Example for Clarification:
+- **SV**: A translocation between chromosomes 9 and 22 leads to **Chronic Myelogenous Leukemia (CML)**.
+- **CNV**: Duplication of a part of chromosome 21 leads to **Down Syndrome**.
+- **Variant Calling**: A mutation in the **BRCA1 gene** leads to an increased risk of **Breast Cancer**.
+
+#### Summary:
+Each type addresses different scales of genetic variation:
+- **SVs** and **CNVs** deal with large structural or copy number changes in the genome.
+- **Variant Calling** focuses on detecting small mutations at the nucleotide level.
+
+
+
