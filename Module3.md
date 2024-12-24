@@ -637,4 +637,106 @@ Each type addresses different scales of genetic variation:
 - **Variant Calling** focuses on detecting small mutations at the nucleotide level.
 
 
+# VCF (Variant Call Format)
+
+The **VCF (Variant Call Format)** is a text file format used for storing **SNPs (Single Nucleotide Polymorphisms)** and **InDels (Insertions and Deletions)** information. It is widely used in genomic research for representing genetic variants across individuals.
+
+## Key Features:
+
+- **Text-based Format**: The VCF format is a plain text file that contains genetic variant data.
+- **Stores SNPs and InDels**: VCF files are used to store both SNPs (single nucleotide changes) and InDels (small insertions or deletions).
+- **Standardized Format**: The VCF format is standardized and used across multiple bioinformatics tools and platforms.
+- **Multi-step Procedure for Variant Calling**: Obtaining variants in this format requires multiple steps involving different tools for calling variants from raw sequencing data.
+
+### References:
+- [1000 Genomes Project](http://www.1000genomes.org/node/101)
+
+## Structure of VCF:
+
+VCF files consist of two main parts:
+
+### 1. **Headers (Meta-information)**
+   The header section contains metadata about the file, such as the reference genome used, the file format version, and the tool used for variant calling.
+
+### 2. **Data Lines**
+   The data lines contain the actual variant information for each position in the genome, which includes:
+   - Chromosome position
+   - ID (variant identifier)
+   - Reference allele
+   - Alternative allele(s)
+   - Quality score
+   - Filter status
+   - Information about the sample(s) and genotype(s)
+
+## Required Fields:
+VCF files have 8 required fields, which are tab-delimited:
+
+1. **CHROM**: Chromosome name (e.g., 1, 2, X, etc.)
+2. **POS**: Position of the variant on the chromosome
+3. **ID**: Variant identifier
+4. **REF**: Reference allele
+5. **ALT**: Alternative allele(s)
+6. **QUAL**: Quality score
+7. **FILTER**: Filter status (e.g., PASS or fail)
+8. **INFO**: Additional information about the variant
+
+## Example of a VCF File:
+
+| CHROM | POS   | ID     | REF | ALT | QUAL | FILTER | INFO                     |
+|-------|-------|--------|-----|-----|------|--------|--------------------------|
+| 1     | 12345 | rs123  | A   | G   | 99   | PASS   | DP=100;AF=0.5            |
+| 1     | 67890 | rs456  | G   | T   | 99   | PASS   | DP=200;AF=0.8            |
+
+In this example:
+- The first line is the header.
+- The following lines represent variants with their respective fields.
+
+## STEP 05: BIOLOGICAL INTERPRETATION
+
+### File Formats:
+- CSV, XLS, TXT
+
+From Variant Annotation to Data Mining
+
+### Web-Based Tools:
+- Various available packages for annotation and interpretation.
+
+### Aim:
+- **Functional impact** of variants (synonymous or non-synonymous).
+- **Gene Ontology Annotation** (BP: Biological Process, MF: Molecular Function, CC: Cellular Component).
+- **Pathway/Network** information.
+- **Predictions** of pathogenicity/severity.
+
+### Useful Tool:
+- **DAVID** (Database for Annotation, Visualization, and Integrated Discovery) for switching between databases.
+  - [DAVID Website](https://david.ncifcrf.gov/)
+
+## Conclusion
+
+### Biological Question
+- The biological question needs to be clearly defined first so that the design of the experiment, the library construction, and the pipeline of analysis can be prepared accordingly.
+
+### Platforms
+- Each platform has its own specificities that need to be understood before choosing one.
+- Different technologies include:
+  - Short reads (e.g., Illumina)
+  - Long reads (e.g., PacBio)
+
+### Considerations:
+- These technologies are rapidly evolving, but several limitations exist, such as:
+  - PCR bias for GC-rich regions.
+- Combining different platforms is possible (e.g., de novo sequencing).
+
+### Input/Output Files
+- Companion indexed files are needed:
+  - `.fa` & `.fai`, `.bam` & `.bai`, `.vcf` & `.vcf.idx`
+- Text-based formats:
+  - FASTA, FASTQ, SAM, GTF/GFF, BED, VCF
+- Binary formats:
+  - BAM, BCF
+
+### Coordinate Systems:
+- Some formats use 1-based indexing (e.g., GFF/GFT, SAM/BAM).
+- Others use 0-based indexing (e.g., BED).
+
 
