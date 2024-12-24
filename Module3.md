@@ -401,7 +401,7 @@ NGS requires significantly less starting DNA/RNA compared to Sanger sequencing.
 #### Sequencing RUN/QC
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/Fastqc.png" width="350"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/Fastqc.png" width="650"/>
 </p>
 
 ### FastQC: Quality Control for NGS Data
@@ -462,7 +462,7 @@ In this step, we align sequencing reads to a reference genome. This process is e
       SEQ-ID  SOURCE  TYPE  START-END  SCORE  STRAND  PHASE  ATTRIBUTES
       ```
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/GTF.png" width="350"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/GTF.png" width="650"/>
 </p>
 
 #### Alignment Tools:
@@ -499,5 +499,5 @@ The GTF (Gene Transfer Format) and GFF (General Feature Format) are used to anno
 
 Example GTF entry:
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SAM.png" width="350"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SAM.png" width="650"/>
 </p>
