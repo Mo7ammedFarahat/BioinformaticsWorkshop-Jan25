@@ -5,6 +5,8 @@
 
 Prepared by: **Mohammed Farahat**
 
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/raw/main/images/Background.jpg" alt="Background Image" style="width:100%; max-width:100%; height:auto;">
+
 ## Table of Contents
 
 * [Module 1: Introduction to Unix/Linux OS](Module1.md)
