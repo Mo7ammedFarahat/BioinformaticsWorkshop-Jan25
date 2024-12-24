@@ -1,4 +1,4 @@
-* [Day1: Introduction to Unix/Linux OS](#day1-introduction-to-unix/linux-os)
+* [Module 1: Introduction to Unix/Linux OS](Module1.md)
 
   - [Introduction to Linux/Unix OS and command line](#introduction-to-linuxunix-os-and-command-line)
   - [Manipulating files, useful commands and tips](#manipulating-files-useful-commands-and-tips)
