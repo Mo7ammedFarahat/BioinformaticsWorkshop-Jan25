@@ -499,5 +499,5 @@ The GTF (Gene Transfer Format) and GFF (General Feature Format) are used to anno
 
 Example GTF entry:
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SAM.png" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SAM.jpg" width="650"/>
 </p>
