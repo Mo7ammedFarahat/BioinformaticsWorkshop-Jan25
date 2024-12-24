@@ -1,4 +1,4 @@
-* [Day2: Introduction to R programming language](#day2-introduction-to-r-programming-language)
+* [Module 2: Introduction to R programming language](Module2.md)
     - [R & R Studio Installing](#r--r-studio-installing)
     - [Basic Syntax](#basic-syntax)
     - [R Reserved Words](#r-reserved-words)
@@ -42,7 +42,7 @@
         - [R - Normal Distribution](#r-normal-distribution)
         - [R - Binomial Distribution](#r-binomial-distribution)
 
-# Day 2: Introduction to R Programming Language
+# Module 2: Introduction to R Programming Language
 
 Welcome to Day 2 of the R course! This section provides an in-depth introduction to the R programming language, covering installation, syntax, data manipulation, visualization, and basic statistics.
 
