@@ -7,7 +7,7 @@ Prepared by: **Mohammed Farahat**
 
 ## Table of Contents
 
-* [Day1: Introduction to Unix/Linux OS](Day1.md)
+* [Module 1: Introduction to Unix/Linux OS](Module1.md)
 
   - [Introduction to Linux/Unix OS and command line](#introduction-to-linuxunix-os-and-command-line)
   - [Manipulating files, useful commands and tips](#manipulating-files-useful-commands-and-tips)
@@ -18,7 +18,7 @@ Prepared by: **Mohammed Farahat**
   - [Controlling tasks](#controlling-tasks)
   - [SSH into remote machine](#ssh-into-remote-machine)
 
-* [Day2: Introduction to R programming language](Day2.md)
+* [Module 2: Introduction to R programming language](Module2.md)
     - [R & R Studio Installing](#r--r-studio-installing)
     - [Basic Syntax](#basic-syntax)
     - [R Reserved Words](#r-reserved-words)
@@ -60,7 +60,7 @@ Prepared by: **Mohammed Farahat**
         - [R - Mean, Median and Mode](#r---mean-median-and-mode)
         - [R - Normal Distribution](#r---normal-distribution)
         - [R - Binomial Distribution](#r---binomial-distribution)
-* [Day3: Genomics Sequencing technologies and NGS Overview](Day3.md)  
+* [Module3: Genomics Sequencing technologies and NGS Overview](Module3.md)  
   - [Part 1: Introduction to DNA Sequencing](#part-1-introduction-to-dna-sequencing)
   - [Part 2: DNA Sequencing in the NGS Era](#part-2-dna-sequencing-in-the-ngs-era)
   - [Part 3: Overview of NGS Technologies](#part-3-overview-of-ngs-technologies)
