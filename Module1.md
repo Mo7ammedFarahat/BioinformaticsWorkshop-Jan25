@@ -10,7 +10,7 @@
   - [SSH into remote machine](#ssh-into-remote-machine)
 
 
-# Day1: Introduction to Unix/Linux OS
+# Module 1: Introduction to Unix/Linux OS
 ## Introduction to Linux/Unix OS and command line
 ### What is Linux?
 - UNIX is an Operating System (OS) initially developed in the 1960s.
