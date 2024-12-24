@@ -542,7 +542,7 @@ Structural variations (SV) include large-scale alterations in the genome and can
 - **Translocations**
 
 <p align="center">
-<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SNV_SV.png" width="650"/>
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SV.jpg" width="650"/>
 </p>
 
 ### Copy-Number Variations (CNV)
@@ -558,6 +558,9 @@ Copy-number variations (CNVs) involve deletions or duplications of genes or rela
 - **SNPs (Single Nucleotide Polymorphisms)**: SNPs affect only a single nucleotide in the genome.
 - **InDels (Insertions and Deletions)**: InDels affect one or several nucleotides in a sequence.
 
+<p align="center">
+<img src="https://github.com/Mo7ammedFarahat/MASRI-Jan25/blob/main/images/Module3/SNV.png" width="650"/>
+</p>
 
 ## Explanation of SV, CNV, and Variant Calling
 
