@@ -8,6 +8,7 @@
   - [Shell Scripting](#shell-scripting)
   - [Controlling tasks](#controlling-tasks)
   - [SSH into remote machine](#ssh-into-remote-machine)
+  - [Conda Environment Setup](#conda-environment-setup)  
 
 
 # Module 1: Introduction to Unix/Linux OS
@@ -912,3 +913,67 @@ ssh remoteusername@remotehost
   scp ./*.txt username@myhost.com:/home/username/folder
   ```
 
+---
+
+## Conda Environment Setup
+
+Conda is a package and environment management system used to manage dependencies for bioinformatics tools.
+
+### Theoretical Overview
+- **Why Conda?**  
+  Isolation of dependencies, reproducibility of workflows, and version control.
+
+- **Key Components:**
+  - Environments: Separate spaces for dependencies.
+  - Channels: Repositories for packages.
+  - YAML Files: Configuration files to export/share environments.
+
+### Practical Guide
+
+#### Installing Conda
+Download and install Miniconda or Anaconda:
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+- [Anaconda](https://www.anaconda.com/products/distribution)
+
+#### Commands for Conda Environments
+1. **Create Environment:**
+   ```bash
+   conda create --name my_env python=3.9
+   ```
+
+2. **Activate/Deactivate Environment:**
+   ```bash
+   conda activate my_env
+   conda deactivate
+   ```
+
+3. **Install Packages:**
+   ```bash
+   conda install fastqc
+   ```
+
+4. **Export/Import Environment:**
+   ```bash
+   conda env export > environment.yml
+   conda env create --file environment.yml
+   ```
+
+5. **List/Remove Environments:**
+   ```bash
+   conda env list
+   conda remove --name my_env --all
+   ```
+
+### Example: Bioinformatics Environment
+```bash
+# Create environment
+conda create --name bioinformatics_env python=3.9 fastqc bwa samtools
+
+# Activate environment
+conda activate bioinformatics_env
+
+# Export environment
+conda env export > bioinformatics_env.yml
+```
+
+---
