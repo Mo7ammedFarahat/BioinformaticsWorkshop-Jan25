@@ -1,3 +1,19 @@
+- [Variant Calling Tutorial](#variant-calling-tutorial)
+  - [1. Install Miniconda](#1-install-miniconda)
+  - [2. Set Up the Conda Environment](#2-set-up-the-conda-environment)
+  - [3. Install Required Tools](#3-install-required-tools)
+  - [4. Download the Data](#4-download-the-data)
+  - [Step 1: Quality Control (QC)](#step-1-quality-control-qc)
+  - [Step 2: Trimming](#step-2-trimming)
+  - [Step 3: Alignment](#step-3-alignment)
+  - [Step 4: Post-Alignment Processing](#step-4-post-alignment-processing)
+  - [Step 5: Variant Calling](#step-5-variant-calling)
+  - [Step 6: Annotating Variants](#step-6-annotating-variants)
+  - [BAM File Structure](#structure-of-the-bam-file)
+  - [VCF File Structure](#structure-of-the-vcf-file)
+  - [Annotation Details](#annotation)
+
+
 # **Variant Calling Tutorial**
 
 ### **1. Install Miniconda:**
