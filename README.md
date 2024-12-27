@@ -63,13 +63,27 @@ Prepared by: **Mohammed Farahat**
         - [R - Mean, Median and Mode](#r---mean-median-and-mode)
         - [R - Normal Distribution](#r---normal-distribution)
         - [R - Binomial Distribution](#r---binomial-distribution)
-* [Module3: Genomics Sequencing technologies and NGS Overview](Module3.md)  
+* [Module 3: Genomics Sequencing technologies and NGS Overview](Module3.md)  
   - [Part 1: Introduction to DNA Sequencing](#part-1-introduction-to-dna-sequencing)
   - [Part 2: DNA Sequencing in the NGS Era](#part-2-dna-sequencing-in-the-ngs-era)
   - [Part 3: Overview of NGS Technologies](#part-3-overview-of-ngs-technologies)
   - [Part 4: DNA-Seq Protocol: Overview](#part-4-dna-seq-protocol-overview)
   - [Part 5: DNA-Seq Analysis Pipeline and File Formats](#part-5-dna-seq-analysis-pipeline-and-file-formats)
 
+* [Module 4: Variant Calling Tutorial](Module4.md)
+  - [1. Install Miniconda](#1-install-miniconda)
+  - [2. Set Up the Conda Environment](#2-set-up-the-conda-environment)
+  - [3. Install Required Tools](#3-install-required-tools)
+  - [4. Download the Data](#4-download-the-data)
+  - [Step 1: Quality Control (QC)](#step-1-quality-control-qc)
+  - [Step 2: Trimming](#step-2-trimming)
+  - [Step 3: Alignment](#step-3-alignment)
+  - [Step 4: Post-Alignment Processing](#step-4-post-alignment-processing)
+  - [Step 5: Variant Calling](#step-5-variant-calling)
+  - [Step 6: Annotating Variants](#step-6-annotating-variants)
+  - [BAM File Structure](#structure-of-the-bam-file)
+  - [VCF File Structure](#structure-of-the-vcf-file)
+  - [Annotation Details](#annotation)
 
 
 #### Acknowledgment of Sources
