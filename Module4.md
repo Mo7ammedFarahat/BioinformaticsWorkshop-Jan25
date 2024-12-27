@@ -1,4 +1,5 @@
-- [Variant Calling Tutorial](#variant-calling-tutorial)
+- [Module 4: Variant Calling Tutorial](#module-4-variant-calling-tutorial)
+  
   - [1. Install Miniconda](#1-install-miniconda)
   - [2. Set Up the Conda Environment](#2-set-up-the-conda-environment)
   - [3. Install Required Tools](#3-install-required-tools)
@@ -14,7 +15,7 @@
   - [Annotation Details](#annotation)
 
 
-# **Variant Calling Tutorial**
+# **Module 4: Variant Calling Tutorial**
 
 ### **1. Install Miniconda:**
 To begin, we'll install Miniconda, which is a minimal installer for Conda.
