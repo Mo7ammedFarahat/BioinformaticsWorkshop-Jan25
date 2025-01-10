@@ -85,6 +85,18 @@ Prepared by: **Mohammed Farahat**
   - [VCF File Structure](#structure-of-the-vcf-file)
   - [Annotation Details](#annotation)
 
+* [Module 5: Transcriptomics (RNA-Seq Analysis)](Module5.md)
+  - [1. RNA-Seq Background](#1-rna-seq-background)
+  - [2. Experimental Design Considerations](#2-experimental-design-considerations)
+  - [3. RNA-Seq Analysis Workflow](#3-rna-seq-analysis-workflow)
+  - [Step 1: Quality Control (QC)](#step-1-quality-control-qc)
+  - [Step 2: Trimming](#step-2-trimming)
+  - [Step 3: Alignment](#step-3-alignment)
+  - [Step 4: Expression Quantification](#step-4-expression-quantification)
+  - [Step 5: Read Count Normalisation](#step-5-read-count-normalisation)
+  - [Step 6: Downstream Analysis](#step-6-downstream-analysis)
+
+
 
 #### Acknowledgment of Sources
 
