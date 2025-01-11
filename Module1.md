@@ -869,7 +869,7 @@ done
 - **jobs**: An alternate way of listing your own processes.
 - **bg**: Put a process in the background.
 
-###It's preferable to use 'tmux' or 'screen' to handle multiple sessions, please check 'tmux' or 'screen' tutorials for more info.
+#### It's preferable to use 'tmux' or 'screen' to handle multiple sessions, please check 'tmux' or 'screen' tutorials for more info.
 
 
 ### Launching a Background Job
