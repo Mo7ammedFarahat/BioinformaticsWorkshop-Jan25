@@ -839,7 +839,7 @@ while [ $n -le 5 ] # n should have an initial value
 do
   echo "Welcome $n times"
   n=$(( n + 1 )) # increment 
-  $n
+  echo $n
 done
 ```
 
