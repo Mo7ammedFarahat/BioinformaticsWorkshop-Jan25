@@ -843,7 +843,7 @@ do
 done
 ```
 
-### Operators Supported by Shell
+### Operators Supported by Shell (assume that a = 20, b = 10)
 
 | Operator | Description                                                                                 | Example                                    |
 |----------|---------------------------------------------------------------------------------------------|--------------------------------------------|
