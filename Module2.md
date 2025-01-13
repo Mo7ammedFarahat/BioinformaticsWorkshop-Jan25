@@ -229,8 +229,10 @@ emp.data <- data.frame(
       "2015-03-27")),
    stringsAsFactors = FALSE
 )
-# Print the data frame.			
-print(emp.data)    head()     tail()
+# Print the data frame.
+print(emp.data)
+head()
+tail()
 # Get the structure of the data frame.
 str(emp.data)
 # Print the summary.
