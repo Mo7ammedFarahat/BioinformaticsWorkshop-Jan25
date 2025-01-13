@@ -232,7 +232,7 @@ emp.data <- data.frame(
 # Print the data frame.
 print(emp.data)
 head()
-tail()
+tail()
 # Get the structure of the data frame.
 str(emp.data)
 # Print the summary.
