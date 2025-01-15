@@ -327,17 +327,20 @@ Functions help in making code modular, reusable, and easier to maintain. They al
 </details>
 We can create user-defined functions in R. They are specific to what a user wants and once created they can be used like the built-in functions.
 
-# Create a function to print squares of numbers in sequence.
+#### Create a function to print squares of numbers in sequence.
+```R
 new.function <- function(a) {
    for(i in 1:a) {
       b <- i^2
       print(b)
    }
-}	
-# Call the function new.function supplying 6 as an argument.
+}
+```R
+#### Call the function new.function supplying 6 as an argument.
+R```
 new.function(6)
-![image](https://github.com/user-attachments/assets/a6d03f79-2f30-45d7-afbb-4b73d49e3c90)
-
+````
+---
 ### Examples on Functions:
 Working with DNA Sequences (Vectors)
 
