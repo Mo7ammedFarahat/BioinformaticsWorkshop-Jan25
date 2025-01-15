@@ -415,6 +415,7 @@ NGS requires significantly less starting DNA/RNA compared to Sanger sequencing.
 - **Per base N content:** Identifies the proportion of unknown bases (Ns) at each position.
 - **Sequence duplication levels:** Analyzes the degree of redundancy in the sequences.
 - **Overrepresented sequences:** Detects any sequences that are unusually abundant.
+- - **Adapter content:** Assesses if any adapter remnants.
 - **Kmer content:** Assesses if any particular kmers (short sequences) are overrepresented.
 
 #### How to Use FastQC:
