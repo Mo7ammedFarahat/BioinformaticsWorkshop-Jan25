@@ -388,8 +388,9 @@ mkdir -p $ANNOTATED_VCF_DIR
 # Annotate variants using SNPeff
 for vcf in $VCF_DIR/*.vcf; do
     sample=$(basename $vcf .vcf)
-    snpEff ann -v MTB_ancestor_reference $vcf > $ANNOTATED_VCF_DIR/${sample}.annotated.vcf
+    snpEff ann -v -c snpEff.config Mycobacterium_tuberculosis_h37rv $vcf > $ANNOTATED_VCF_DIR/${sample}.annotated.vcf
 done
+
 ```
 
 - Save the script by pressing `Ctrl+X`, then `Y`, and hit `Enter`.
