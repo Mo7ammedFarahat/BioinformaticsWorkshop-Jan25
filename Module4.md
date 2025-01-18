@@ -54,6 +54,7 @@ Install the essential bioinformatics tools for QC, trimming, alignment, and vari
 conda install fastqc multiqc --channel conda-forge --channel bioconda --strict-channel-priority
 conda install -y bioconda::trimmomatic
 conda install bwa samtools --channel conda-forge --channel bioconda --strict-channel-priority
+conda install bioconda::bcftools
 conda install igv --channel conda-forge --channel bioconda --strict-channel-priority
 conda install snpeff --channel conda-forge --channel bioconda --strict-channel-priority
 ```
