@@ -140,7 +140,7 @@ mkdir -p $TRIMMED_DIR
 
 # Trimming paired-end reads
 for sample in $(ls $DATASET_DIR/*_1.fastq.gz | sed 's/_1.fastq.gz//' | xargs -n 1 basename); do
-    TrimmomaticPE -phred33 \
+    Trimmomatic PE -phred33 \
         $DATASET_DIR/${sample}_1.fastq.gz $DATASET_DIR/${sample}_2.fastq.gz \
         $TRIMMED_DIR/${sample}_1.paired.fastq.gz $TRIMMED_DIR/${sample}_1.unpaired.fastq.gz \
         $TRIMMED_DIR/${sample}_2.paired.fastq.gz $TRIMMED_DIR/${sample}_2.unpaired.fastq.gz \
