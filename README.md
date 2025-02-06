@@ -1,7 +1,7 @@
 # Bioinformatics workshop for beginners
 
 ## Medical Ain Shams Research Institute, Egypt, Jan 2025.
-Collaborators: BioNet Masr | Arab BioNet
+Collaborators: BioNetMasr | Arab BioNet
 
 Prepared by: **Mohammed Farahat**
 
